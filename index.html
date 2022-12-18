@@ -21,7 +21,7 @@
         >
 
         <ul class="site-nav list">
-          <li class="item"><a href="index.html" class="link">Studio</a></li>
+          <li class="item activ-page"><a href="index.html" class="link">Studio</a></li>
           <li class="item"><a href="./portfolio.html" class="link">Portfolio</a></li>
           <li class="item"><a href="/" class="link">Contacts</a></li>
         </ul>
@@ -48,7 +48,7 @@
           Effective Solutions 
           for Your Business
         </h1>
-        <button type="button" class="button-hero">Order Service</button>
+        <button type="button" class="button-hero" data-modal-open>Order Service</button>
       </div>
       </section>
 
@@ -371,5 +371,20 @@
   </div>
     </div>
     </footer>
+
+    <!--Modal-->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-window" data-modal-close>
+          <svg class="close-modal" width="8" height="8">
+            <use href="./img/sprite1.svg#close-modal">
+
+            </use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script> 
   </body>
 </html>
